@@ -18,6 +18,8 @@ $(document).ready(function(){
 
     blockOneSlider();
 
+    scrollUp('.scroll-bottom-button', '.block-2');
+
 });
 
 $(window).load(function(){

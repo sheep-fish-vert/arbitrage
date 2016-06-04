@@ -15,14 +15,105 @@
 }
 @media screen and (max-width: 992px){
 
+    /* block-1 */
+
+        .block-1{
+
+            .block-1-main{
+
+                .top-block-text{margin-bottom: 20px;}
+
+                .info-block-items{display: flex;justify-content: space-around;align-items: flex-start;margin-bottom: 20px;
+                    &:before{display: none;}
+
+                    .info-item{position: relative;left:auto!important;top:auto!important;width: 25%;margin-bottom: 10px;
+                        .info-item-img{
+                            &:before{left:6px!important;top:6px!important;}
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+    /* /block-1 */
+
 }
 @media screen and (max-width: 767px){
+
+    /* block-1 */
+
+        .block-1{
+
+            .block-1-main{
+                .info-block-items{flex-wrap:wrap;}
+            }
+
+        }
+
+    /* /block-1 */
 
 }
 @media screen and (max-width: 666px){
 
+    /* block-1 */
+
+        .block-1{
+
+            .block-1-main{
+
+                .logo{margin-bottom: 25px;}
+
+                .top-block-text{font-size: 30px;
+                    p{
+                        &>span{font-size: 34px;}
+                        b{font-size: 34px;
+                            &>span{font-size: 30px;}
+                        }
+                    }
+                }
+
+                .top-block-info-main{position: relative;padding: 40px 0 50px 0;
+
+                    .top-block-info{display: block;border-radius: 10px;border:1px solid rgba(255, 255, 255, .45);
+                        .top-block-info-wrap{width: 100%;border-width: 0px;text-align: center;padding:10px 15px;
+                            &:first-child{border-width: 0;}
+                        }
+                    }
+
+                    .top-block-info-center-line{position: static;width: 0;height: 0;
+                        &:before{top:3px;}
+                        &:after{display: none;}
+
+                        .scroll-bottom-button{bottom: 0;}
+                    }
+
+                }
+            }
+
+        }
+
+    /* /block-1 */
+
 }
 @media screen and (max-width: 479px){
+
+    /* block-1 */
+
+        .block-1{
+
+            .block-1-main{
+
+                .info-block-items{
+                    .info-item{width: 50%;}
+                }
+
+            }
+
+        }
+
+    /* /block-1 */
 
 }
 @media screen and (max-width: 320px){
