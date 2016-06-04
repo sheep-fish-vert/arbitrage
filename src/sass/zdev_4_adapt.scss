@@ -43,9 +43,29 @@
         }
     }
 
+    .block-4{
+        .block-4-title{padding: 22px 0px;
+            h2{font-size: 40px;line-height: 35px;}
+        }
+        .block-4-list{
+            li{padding-left: 48px;font-size: 19px}
+        }
+        .block-4-kitty{height: 355px;display: flex;align-items:center;justify-content:center;
+            &:after{max-height: 405px;}
+            .kitty{}
+            .kitty-text{font-size: 30px;}
+        }
+    }
+
 }
 @media screen and (max-width: 666px){
-
+    .block-4{
+        .block-4-kitty{
+            .kitty{padding-left: 50%;}
+            .kitty-text{font-size: 25px;}
+            &:after{background-position: 45% center;}
+        }
+    }
 }
 @media screen and (max-width: 479px){
     .block-3{
