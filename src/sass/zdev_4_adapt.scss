@@ -17,7 +17,20 @@
 
 }
 @media screen and (max-width: 767px){
-
+    .block-2{min-height: 413px;margin-top: 80px;margin-bottom: 119px;background-color: #fff;
+    &:after{top: -97px;height: 114px;}
+    &:before{ bottom: -104px;height: 104px;}
+    .block-2-title{text-align: center;padding: 30px 0px;
+        h2{font-size: 40px;}
+    }
+    .block-2-text{align-items:center;flex-direction:column;
+        p{margin: 0;}
+        .aside{
+            &.left{padding-right: 0px;}
+            &.right{flex:1;padding-top: 15px;font-size: 16px;color: #212121;line-height: 1.2;}
+        }
+    }
+}
 }
 @media screen and (max-width: 666px){
 
