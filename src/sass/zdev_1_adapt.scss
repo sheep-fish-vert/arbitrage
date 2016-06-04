@@ -40,6 +40,25 @@
     /* /block-1 */
 
 }
+@media screen and (max-width: 959px){
+
+    /* block-6 */
+
+        .block-6{
+
+            .block-6-drag-wrap{flex-wrap:wrap;justify-content: space-around;
+                .drag-field-items{width: 100%;padding-top: 20px;
+                    ul{justify-content: flex-start;
+                        li{margin: 0 5px 10px 5px;}
+                    }
+                }
+            }
+
+        }
+
+    /* /block-6 */
+
+}
 @media screen and (max-width: 767px){
 
     /* block-1 */
@@ -95,6 +114,18 @@
         }
 
     /* /block-1 */
+
+    /* block-6 */
+
+        .block-6{
+
+            .block-6-drag-wrap{
+                .block-6-tuzer{margin-bottom: 20px;}
+            }
+
+        }
+
+    /* /block-6 */
 
     /* block-7 */
 
