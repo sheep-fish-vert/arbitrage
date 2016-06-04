@@ -101,7 +101,7 @@ function validationCall(form){
   var formSur = thisForm.serialize();
 
     $.ajax({
-        url : thisForm.attr('action'),
+        url : ajaxUrl,
         data: formSur,
         method:'POST',
         success : function(data){
@@ -171,7 +171,7 @@ function popNext(popupId, popupWrap){
 
     $.fancybox.open(popupId,{
         padding:0,
-        fitToView:false,
+        fitToView:true,
         wrapCSS:popupWrap,
         autoSize:true,
         afterClose: function(){
@@ -193,7 +193,7 @@ function popNext(popupId, popupWrap){
 /*маска на инпуте*/
 function Maskedinput(){
     if($('.tel-mask')){
-        $('.tel-mask').mask('+9 (999) 999-99-99 ');
+        $('.tel-mask').mask('+9 (999) 999-99-99');
     }
 }
 
@@ -265,7 +265,8 @@ function someAjax(item, someUrl, successFunc, someData){
 
 $(document).ready(function(){
 
-   validate('#call-popup .contact-form', {submitFunction:validationCall});
+   validate('.connect-form', {submitFunction:validationCall});
+
    Maskedinput();
    fancyboxForm();
 
