@@ -36,7 +36,7 @@
 }
 
 
-.block-4{
+.block-4{position: relative;z-index: 1;
     .mbox{position: static;}
     .block-4-title{text-align: center;padding: 46px 0px;color: #1a2858;max-width: 856px;margin: 0 auto;
         h2{font-size: 60px;color: #1a2858;font-weight: 300;margin: 0;line-height: 55px;
@@ -61,3 +61,39 @@
         .kitty-text{position: relative;z-index: 10;color: #1a2858;font-size: 37px;font-style:italic;font-weight: 300;}
     }
 }
+
+.block-5{background:transparent url('../images/block-5-bg.jpg') center top no-repeat;min-height: 1200px;position: relative;z-index: 0;margin-top: -101px;
+    .block-5-wrap{padding-top: 130px;display: flex;flex-direction:column;align-items:center;
+        .block-5-title{text-align: center;padding: 24px 0px;color: white;
+            h2{font-size: 60px;color: #fff;font-weight: 300;margin: 0;line-height: 55px;
+                b{font-weight: bold;display: block;}
+            }
+        }
+        .block-5-number{font-weight: bold;font-size: 65px;color: #44ecba;padding: 10px 0px 20px;}
+        .block-5-text{display: flex;
+            .item{
+                &.item-1{display: flex;text-align: right;align-items:flex-end;color: #44ecba;font-weight: 300;font-size: 16px;padding-right: 10px;padding-bottom: 5px;}
+                &.item-2{display: flex;flex-direction:column;align-items:center;padding-right: 20px;justify-content: center;
+                    img:first-child{margin-bottom: 5px;}
+                }
+                &.item-3{color: white;font-size: 30px;font-weight: 200;line-height: 1.2;
+                    p{margin: 0;}
+                }
+            }
+        }
+    }
+    .block-5-sortable{
+        .block-5-sortable-wrap {
+            &.item-1{padding: 30px;border:3px dashed white;border-radius:8px;display: flex;
+                ul{margin:0;list-style-type: none;padding:0;height: 290px;width: 930px;display: flex;}
+                li{width: 219px;}
+            }
+            &.item-2{
+                ul{padding:0;list-style-type: none;margin: 0;display: flex;}
+                li{margin:0px 10px;}
+            }
+        }
+        .block-sortable2-img{width: 146px;height: 183px;background-color: #fff;display: flex;align-items:center;justify-content:center;border-radius: 10px;}
+    }
+}
+
