@@ -1,6 +1,9 @@
 function block_5_sortable(){
     $( "#block-5-sortable1,  #block-5-sortable2" ).sortable({
-      connectWith:".block-5 .connectedSortable"
+      connectWith:".block-5 .connectedSortable",
+      revert:true,
+      snap:true,
+      cursor:"-webkit-grabbing"
     }).disableSelection();
 }
 
