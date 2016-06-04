@@ -7,7 +7,7 @@
         .block-1-main{background-image:url(../images/top-block-background.png);position: relative;padding-top: 35px;color:#fff;
             &:before, &:after{content:'';display: block;position: absolute;pointer-events:none;background-repeat: no-repeat;}
             &:before{background-image:url(../images/top-block-left-background-img.png);width: 942px;height: 833px;left:-650px;top:-75px;}
-            &:after{background-image:url(../images/top-block-right-background-img.png);width: 600px;height: 526px;right:-330px;top:80px;}
+            &:after{background-image:url(../images/top-block-right-background-img.png);width: 600px;height: 526px;right:-344px;top:152px;}
 
             .logo{text-align: center;font-weight: 300;font-size: 19px;color:#fff;margin-bottom: 45px;
                 img{margin-bottom: -13px;}
