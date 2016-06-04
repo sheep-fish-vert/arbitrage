@@ -96,6 +96,28 @@
 
     /* /block-1 */
 
+    /* block-7 */
+
+        .block-7{
+            .block-7-top{
+                .connect-form{
+                    .title{font-size: 40px;}
+
+                    .form-row{flex-wrap:wrap;margin:0 -15px;
+                        &.less-margin{margin: 0 -15px;
+                            .form-input{margin-bottom: 17px;}
+                        }
+                        .form-input{margin-bottom: 37px;}
+                    }
+
+                    .form-description{width: 100%;}
+
+                }
+            }
+        }
+
+    /* /block-7 */
+
 }
 @media screen and (max-width: 479px){
 
@@ -114,6 +136,14 @@
         }
 
     /* /block-1 */
+
+    /* fancybox */
+
+        #call_success{font-size: 20px;
+            .call-title{font-size: 28px;}
+        }
+
+    /* /fancybox */
 
 }
 @media screen and (max-width: 320px){
