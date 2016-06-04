@@ -41,6 +41,9 @@ body{min-height:100%;width:100%;min-width:320px;font-family:'CoreSansNR', arial,
     /* /styles for wp-admin panel */
 
 }
+
+.global-wrapper{overflow: hidden;}
+
 img{vertical-align:bottom;border:0;max-width:100%;}
 
 section{position: relative;}
@@ -102,6 +105,7 @@ input, textarea{
 @include font-face('CoreSansNR', 'CoreSansNR-37CondLightItalic', 300, italic);
 @include font-face('CoreSansNR', 'CoreSansNR-47CondRegular');
 @include font-face('CoreSansNR', 'CoreSansNR-67CondBold', 700);
+@include font-face('CoreSansNR', 'CoreSansNR-77CnExtraBold', 800);
 
 @include font-face('ChalkboardSE', 'ChalkboardSE-Light', 300);
 
