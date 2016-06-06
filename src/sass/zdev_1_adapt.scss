@@ -144,9 +144,12 @@
     /* block-7 */
 
         .block-7{
-            .block-7-top{
-                .connect-form{
-                    .title{font-size: 40px;}
+            .block-7-top{margin-bottom: 120px;
+
+                .mbox{top:-30px;}
+
+                .connect-form{padding:0px 15px;
+                    .title{font-size: 36px;margin: 0 0 40px 0;}
 
                     .form-row{flex-wrap:wrap;margin:0 -15px;
                         &.less-margin{margin: 0 -15px;
