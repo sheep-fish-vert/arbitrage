@@ -22,8 +22,9 @@
             &:before{background-image:url(../images/top-block-left-background-img.png);width: 942px;height: 833px;left:-650px;top:-75px;}
             &:after{background-image:url(../images/top-block-right-background-img.png);width: 600px;height: 526px;right:-344px;top:152px;}
 
-            .logo{text-align: center;font-weight: 300;font-size: 19px;color:#fff;margin-bottom: 45px;
+            .logo{text-align: center;margin-bottom: 45px;
                 img{margin-bottom: -13px;}
+                h2{font-weight: 300;font-size: 19px;color:#fff;}
             }
 
             .top-block-text{font-size: 40px;font-weight: 200;text-align: center;margin-bottom: 189px;

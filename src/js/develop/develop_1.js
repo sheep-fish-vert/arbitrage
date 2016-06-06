@@ -63,6 +63,16 @@
 
 /* /block-6 scripts */
 
+/* scroll reveal */
+
+    function scrollRevealInit(){
+
+        window.sr = ScrollReveal().reveal('.animate');
+
+    }
+
+/* /scroll reveal */
+
 
 $(document).ready(function(){
 
@@ -72,6 +82,8 @@ $(document).ready(function(){
 
     blockSixthTriangle();
     blockSixthSortable();
+
+    scrollRevealInit();
 
 });
 
