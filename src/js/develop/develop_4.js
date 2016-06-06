@@ -10,13 +10,8 @@ function block_5_sortable(){
         cursor:"-webkit-grabbing",
         receive: function(event, ui) {
             var list = $(this);
-            //console.log(list);
-
-
             sender = $(ui.sender);
-            //console.log(sender.attr('id'));
             if ( sender.attr('id') == 'block-5-sortable2') {
-                console.log('sender 222222');
                 if( $(ui.item).siblings('li').length > 0 ){
                     sender.sortable('cancel');
                 }
@@ -38,16 +33,7 @@ function block_5_sortable(){
                 var start_pos = ui.item.parent().index();
                 ui.item.parent().attr('data_start_pos', start_pos);
             }
-        },
-        change: function(event, ui) {
-        },
-        update: function(event, ui) {
-
-        },
-        beforeStop: function(event, ui) {
         }
-
-
     }).disableSelection();
 }
 
