@@ -85,7 +85,7 @@ $(document).ready(function(){
     blockSixthTriangle();
     blockSixthSortable();
 
-    scrollRevealInit();
+    //scrollRevealInit();
 
 });
 

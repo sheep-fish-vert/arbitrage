@@ -23,11 +23,13 @@
         .block-2-title{text-align: center;padding: 30px 0px;
             h2{font-size: 40px;}
         }
-        .block-2-text{align-items:center;flex-direction:column;
+        .block-2-text{align-items:center;flex-direction:column;margin-bottom: 20px;
             p{margin: 0;}
             .aside{
-                &.left{padding-right: 0px;}
-                &.right{flex:1;padding-top: 15px;font-size: 16px;color: #212121;line-height: 1.2;}
+                &.left{padding-right: 0px;width: 100%;
+                    svg{display: block;margin: 0 auto;}
+                }
+                &.right{padding-top: 15px;font-size: 16px;color: #212121;line-height: 1.2;width: 100%;}
             }
         }
     }
@@ -62,6 +64,7 @@
             h2{font-size: 40px;line-height: 35px;}
         }
         .block-5-wrap .block-5-number{font-size: 50px;}
+        .block-5-wrap .block-5-text{margin-left: 0;}
         .block-5-wrap .block-5-text .item.item-3{font-size: 24px;}
         .block-5-sortable .block-5-sortable-wrap.item-1 ul{height: 185px;}
         .block-5-sortable .block-5-sortable-wrap.item-1{padding: 21px 10px;}
