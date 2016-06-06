@@ -41,6 +41,8 @@
 
             $(this).find('.sort-to-'+(index+1)+', .sort-from-'+(index+1)).sortable({
                 connectWith:connectClass,
+                snap:true,
+                revert:true,
                 stop:function(event, ui){
                     if($('.sort-to-'+(index+1)+' li').length){
                         $('.sort-to-'+(index+1)).parents('.drag-field').addClass('not-empty');

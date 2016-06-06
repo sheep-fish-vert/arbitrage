@@ -2,6 +2,7 @@
 function block_5_sortable(){
     var ul;
     var oldElem;
+    var sender;
     $( ".block-5 .sort-item,  #block-5-sortable2" ).sortable({
         connectWith:".block-5 .connectedSortable",
         revert:true,
@@ -9,6 +10,12 @@ function block_5_sortable(){
         cursor:"-webkit-grabbing",
         receive: function(event, ui) {
             var list = $(this);
+            sender = $(ui.sender);
+            if ( sender.attr('id') == 'block-5-sortable2') {
+                if( $(ui.item).siblings('li').length > 0 ){
+                    sender.sortable('cancel');
+                }
+            }
             if (list.attr('id') != "block-5-sortable2") {
                 ul = $(ui.sender);
                 if( ul.is('.sort-item')){
@@ -26,16 +33,7 @@ function block_5_sortable(){
                 var start_pos = ui.item.parent().index();
                 ui.item.parent().attr('data_start_pos', start_pos);
             }
-        },
-        change: function(event, ui) {
-        },
-        update: function(event, ui) {
-
-        },
-        beforeStop: function(event, ui) {
         }
-
-
     }).disableSelection();
 }
 
