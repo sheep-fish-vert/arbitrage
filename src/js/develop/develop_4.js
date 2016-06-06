@@ -1,6 +1,7 @@
 
 function block_5_sortable(){
     var ul;
+    var placeholder;
     $( ".block-5 .sort-item,  #block-5-sortable2" ).sortable({
         connectWith:".block-5 .connectedSortable",
         revert:true,
@@ -16,7 +17,16 @@ function block_5_sortable(){
 
                 console.info('beforeStop');
                 ul = $(ui.sender);
-                console.log(ul);
+                if( ul.is('.sort-item')){
+                    var child = ul.find('li');
+                    //placeholder = $('#block-5-sortable1 .ui-sortable-placeholder').siblings('li');
+                    placeholder = $(ui.item).siblings('li');
+                    elem = $(ui.item);
+                    console.log(placeholder);
+
+                    console.log('elem ' , elem);
+                }
+
             }
         },
         start:function(event, ui){
@@ -31,12 +41,12 @@ function block_5_sortable(){
 
         },
         beforeStop: function(event, ui) {
-            if ($(this).attr('id') != "block-5-sortable2") {
-                console.info('beforeStop');
-                ul = ui.sender;
-                console.log(ul);
+            // if ($(this).attr('id') != "block-5-sortable2") {
+            //     console.info('beforeStop');
+            //     ul = ui.sender;
+            //     console.log(ul);
 
-            }
+            // }
         }
 
 
