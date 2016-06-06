@@ -263,9 +263,67 @@ function someAjax(item, someUrl, successFunc, someData){
 
 */
 
+/* validation call for this project */
+
+    function connectAjax(form){
+
+        var thisForm = $(form);
+        var formSur = thisForm.serialize();
+
+        sortableObject = {
+            orderMassive:{},
+            tuzerMassives:{}
+        }
+
+        $('#block-5-sortable1 ul').each(function(index){
+
+            var orderIndex = index + 1;
+
+            if($(this).find('li').length){
+                sortableObject.orderMassive[orderIndex] = $(this).find('li span').attr('data-name');
+            }else{
+                sortableObject.orderMassive[orderIndex] = 'none';
+            }
+        });
+
+        $('.drag-field-main').each(function(index){
+
+            var tuzerMassiveName = 'tuzer-massive-' + (index + 1);
+
+            sortableObject.tuzerMassives[tuzerMassiveName] = [];
+
+            $(this).find('li').each(function(indexLi){
+
+                sortableObject.tuzerMassives[tuzerMassiveName].push($(this).find('img').attr('data-tuzer-name'));
+
+            });
+
+        });
+
+        $.ajax({
+            url : ajaxUrl,
+            data: {formInfo:formSur, sortableQuestions:sortableObject},
+            method:'POST',
+            success:function(data){
+
+                if ( data.trim() == 'true') {
+                    thisForm.trigger("reset");
+                    popNext("#call_success", "call-popup");
+                }
+                else {
+                   thisForm.trigger('reset');
+                }
+
+            }
+        });
+
+    }
+
+/* /validation call for this project */
+
 $(document).ready(function(){
 
-   validate('.connect-form', {submitFunction:validationCall});
+   validate('.connect-form', {submitFunction:connectAjax});
 
    Maskedinput();
    fancyboxForm();

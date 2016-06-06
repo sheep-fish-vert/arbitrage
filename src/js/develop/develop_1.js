@@ -20,7 +20,7 @@
         function triangleSize(){
 
             var windowWidth = $(window).width();
-            console.log(windowWidth);
+
             $('.block-6-triangle').css({'border-width': '30px '+windowWidth+'px 0 0'});
 
         }
