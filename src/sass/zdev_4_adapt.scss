@@ -57,6 +57,20 @@
         }
     }
 
+    .block-5{
+        .block-5-wrap .block-5-title{
+            h2{font-size: 40px;line-height: 35px;}
+        }
+        .block-5-wrap .block-5-number{font-size: 50px;}
+        .block-5-wrap .block-5-text .item.item-3{font-size: 24px;}
+        .block-5-sortable .block-5-sortable-wrap.item-1 ul{height: 185px;}
+        .block-5-sortable .block-5-sortable-wrap.item-1{padding: 21px 10px;}
+        .block-5-sortable .block-5-sortable-wrap.item-2 ul{align-items: center;justify-content: center;height: 185px;}
+        .block-5-sortable .block-5-sortable-wrap.item-2 ul li{width: 20%;}
+        .block-5-sortable .block-sortable2-img{width: auto;height: 150px;}
+        .block-5-sortable .block-5-sortable-wrap.item-1 ul:after{height: 35px;width: 35px;font-size: 19px;}
+    }
+
 }
 @media screen and (max-width: 666px){
     .block-4{
@@ -66,12 +80,35 @@
             &:after{background-position: 45% center;}
         }
     }
+
+    .block-5{min-height: auto;
+        .block-5-wrap .block-5-number{font-size: 40px;}
+        .block-5-wrap .block-5-text .item.item-3{font-size: 20px;}
+        .block-5-sortable .block-5-sortable-wrap.item-1 ul{height: 112px;}
+        .block-5-sortable .block-5-sortable-wrap.item-1{padding: 10px 5px;}
+        .block-5-sortable .block-5-sortable-wrap.item-2 ul{align-items: center;justify-content: center;height: 185px;}
+        .block-5-sortable .block-sortable2-img{height: 121px;padding: 5px;}
+        .block-5-sortable .block-5-sortable-wrap.item-1 ul:after{height: 35px;width: 35px;font-size: 19px;}
+    }
 }
 @media screen and (max-width: 479px){
     .block-3{
         .block-3-items{
             .item{width: 100%;align-items: center;margin-bottom: 20px;}
         }
+    }
+
+    .block-5{min-height: auto;
+        .block-5-sortable .block-5-sortable-wrap.item-1{padding: 25px 11px 10px;}
+        #block-5-sortable1{display: flex;align-items:center;justify-content:space-between;flex-wrap: wrap;
+            &:after{display: none !important;}
+        }
+        .block-5-sortable .block-5-sortable-wrap.item-1 #block-5-sortable1>ul{width: 47%;float: none;margin:0;margin-bottom: 20px;height: 120px;
+            span{height: 100% !important;}
+        }
+
+        .block-5-sortable .block-5-sortable-wrap.item-2 ul{justify-content:space-between;flex-wrap: wrap;height: auto;min-height: 300px;}
+        .block-5-sortable .block-5-sortable-wrap.item-2 ul li{margin:0;width: 47%;margin-bottom: 20px;}
     }
 }
 @media screen and (max-width: 320px){
