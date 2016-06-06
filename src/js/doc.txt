@@ -1,0 +1,24 @@
+Програмисту желательно писать скурипты только в validate_script.js
+
+При успешной валидации формы отправляеться ajax-запрос на ajaxUrl (переменая в футере в которой храниться путь к обработчику), если он успешен то появляеться попап с сообщением. Поиск скрипта по функции connectAjax в validate_script.js.
+
+    отправляю:
+        data:{formInfo:formSur, sortableQuestions:sortableObject}
+        где:
+            - formSur - данные с формы
+            - sortableObject - объект хранящий в себе ответы пользователя
+                вид обекта:
+                {
+                    orderMassive:{
+                        "1":"data-img-name1", - какой "последовательности" вибран "какой" итем (если ничего не выбрано принимает значение - none)
+                        "2":"data-img-name2",
+                        "3":"data-img-name3",
+                        "4":"data-img-name4"
+                    },
+                    tuzerMassives:{ - колиство вопросов может превышать 2. Главное сохранять последовательные имена класов (sortable-tuzer-1, sortable-tuzer-2, sortable-tuzer-3, ... ; sort-from-1, sort-from-2, sort-from-3, ... ; sort-to-1, sort-to-2, sort-to-3, ...)
+                        "tuzer-massive-1":['some_choosen_1', 'some_choosen_2', 'some_choosen_3', ...], - к определёному вопросу масив выбраных ответов
+                        "tuzer-massive-2":['some_choosen_1', 'some_choosen_2', 'some_choosen_3', ...],
+                        ...
+                    }
+                }
+
