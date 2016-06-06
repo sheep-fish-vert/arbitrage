@@ -300,8 +300,6 @@ function someAjax(item, someUrl, successFunc, someData){
 
         });
 
-        console.log(sortableObject);
-
         $.ajax({
             url : ajaxUrl,
             data: {formInfo:formSur, sortableQuestions:sortableObject},
