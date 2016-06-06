@@ -122,6 +122,13 @@
 
         .block-6{
 
+            .block-6-descript{flex-direction:column-reverse;justify-content: center;align-items: center;
+                .descript-right{padding-left: 0;text-align: center;}
+                .descript-left{flex-direction:row-reverse;align-items: center;
+                    .descript-text{text-align:left;margin-right: 0;margin-left: 5px;}
+                }
+            }
+
             .block-6-drag-wrap{
                 .block-6-tuzer{margin-bottom: 20px;}
             }
