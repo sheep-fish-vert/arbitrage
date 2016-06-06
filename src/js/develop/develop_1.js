@@ -33,6 +33,34 @@
 
     }
 
+    function blockSixthSortable(){
+
+        $('.block-6-drag-wrap').each(function(index){
+
+            var connectClass = '.sortable-tuzer-'+(index+1);
+
+            $(this).find('.sort-to-'+(index+1)+', .sort-from-'+(index+1)).sortable({
+                connectWith:connectClass,
+                stop:function(event, ui){
+                    if($('.sort-to-'+(index+1)+' li').length){
+                        $('.sort-to-'+(index+1)).parents('.drag-field').addClass('not-empty');
+                    }else{
+                        $('.sort-to-'+(index+1)).parents('.drag-field').removeClass('not-empty');
+                    }
+
+                    if($('.sort-from-'+(index+1)+' li').length == 0){
+                        $('.sort-from-'+(index+1)).parents('.drag-field-items').addClass('empty');
+                    }else{
+                        $('.sort-from-'+(index+1)).parents('.drag-field-items').removeClass('empty');
+                    }
+
+                }
+            }).disableSelection();
+
+        });
+
+    }
+
 /* /block-6 scripts */
 
 
@@ -43,6 +71,7 @@ $(document).ready(function(){
     scrollUp('.scroll-bottom-button', '.block-2');
 
     blockSixthTriangle();
+    blockSixthSortable();
 
 });
 
