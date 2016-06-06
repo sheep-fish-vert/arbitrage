@@ -42,7 +42,7 @@ body{min-height:100%;width:100%;min-width:320px;font-family:'CoreSansNR', arial,
 
 }
 
-.global-wrapper{overflow: hidden;}
+.global-wrapper{overflow: hidden;max-width: 1920px;margin: 0 auto;}
 
 img{vertical-align:bottom;border:0;max-width:100%;}
 
