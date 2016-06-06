@@ -12,8 +12,9 @@
 
         .block-1-slider{position: absolute;width: 100%;height: 100%;overflow: hidden;
             .slick-list{height: 100%;}
+            .slick-track{height: 100%;}
             .slick-slide{position: relative;
-                img{max-width: none;position: absolute;top:0;left:50%;transform:translate(-50%, 0);}
+                img{max-width: none;min-height: 100%;position: absolute;top:0;left:50%;transform:translate(-50%, 0);}
             }
         }
 

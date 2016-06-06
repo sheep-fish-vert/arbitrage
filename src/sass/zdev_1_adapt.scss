@@ -48,7 +48,7 @@
 
             .block-6-drag-wrap{flex-wrap:wrap;justify-content: space-around;
                 .drag-field-items{width: 100%;padding-top: 20px;
-                    ul{justify-content: flex-start;
+                    ul{justify-content: space-around;
                         li{margin: 0 5px 10px 5px;}
                     }
                 }
@@ -85,6 +85,8 @@
 
             .block-1-main{
 
+                &:before, &:after{display: none;}
+
                 .logo{margin-bottom: 25px;}
 
                 .top-block-text{font-size: 30px;
@@ -98,17 +100,17 @@
 
                 .top-block-info-main{position: relative;padding: 40px 0 50px 0;
 
-                    .top-block-info{display: block;border-radius: 10px;border:1px solid rgba(255, 255, 255, .45);
+                    .top-block-info{display: block;border-radius: 10px;border:1px solid rgba(255, 255, 255, .45);position: relative;z-index: 1;
                         .top-block-info-wrap{width: 100%;border-width: 0px;text-align: center;padding:10px 15px;
                             &:first-child{border-width: 0;}
                         }
                     }
 
-                    .top-block-info-center-line{position: static;width: 0;height: 0;
+                    .top-block-info-center-line{width: 100%;height: 100%;left:0;z-index: 0;
                         &:before{top:3px;}
                         &:after{display: none;}
 
-                        .scroll-bottom-button{bottom: 0;}
+                        .scroll-bottom-button{bottom: 0;left:calc(50% - 18px);}
                     }
 
                 }
