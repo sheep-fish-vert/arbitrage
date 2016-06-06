@@ -127,6 +127,60 @@
 
 /* /block-1 */
 
+/* block-6 */
+
+    .block-6{z-index: 1;margin-top: -30px;
+
+        .block-6-triangle{border-style:solid;border-color:transparent #22a880;position: absolute;bottom:100%;left:0;}
+
+        .block-6-wrap{background-color: #22a880;position: relative;color:#fff;padding:40px 0 180px 0;}
+
+        .title{text-align: center;font-size: 65px;font-weight: 700;margin-bottom: 25px;}
+
+        .block-6-descript{display: flex;justify-content: center;align-items: flex-end;font-weight: 200;line-height: 1.25;margin-bottom: 40px;
+            .descript-left{display: flex;align-items: flex-end;text-align: right;
+                .descript-text{color:#b0ffe7;font-size: 16px;margin-right: 5px;}
+            }
+            .descript-right{font-size: 30px;padding-left: 15px;}
+        }
+
+        .block-6-drag-wrap{display: flex;justify-content: space-between;align-items: flex-start;margin-bottom: 60px;
+            &:last-child{margin-bottom: 0;}
+
+            .block-6-tuzer{padding-right: 10px;}
+
+            .drag-field{width: 390px;position: relative;
+
+                .drag-field-descript{position: absolute;z-index: 0;width: 100%;height: 100%;top:0;left:0;display: flex;justify-content: center;align-items: center;flex-direction: column;line-height: 1.25;font-weight: 300;
+                    .descript-big{font-size: 68px;color:rgba(176, 255, 231, .1);}
+                    .descript-small{color:#b0ffe7;font-size: 16px;text-align: center;}
+                }
+
+                .drag-field-main{
+                    ul{border:2px dashed #fff;border-radius: 10px;width: 390px;min-height: 300px;margin: 0;padding: 0;list-style:none;display: flex;justify-content: space-between;align-items: flex-start;flex-wrap: wrap;
+                        li{margin-bottom: 10px;
+                            .drag-item-wrap{width: 80px;height: 80px;border-radius: 5px;overflow: hidden;margin-bottom: 5px;}
+                            .drag-item-text{font-weight: 700;font-size: 14px;}
+                        }
+                    }
+                }
+            }
+
+            .drag-field-items{width: 260px;
+                ul{margin:0;padding: 0;list-style:none;display: flex;justify-content: space-between;align-items: flex-start;flex-wrap:wrap;text-align: center;
+                    li{margin-bottom: 10px;
+                        .drag-item-wrap{width: 80px;height: 80px;border-radius: 5px;overflow: hidden;margin-bottom: 5px;}
+                        .drag-item-text{font-weight: 700;font-size: 14px;}
+                    }
+                }
+            }
+        }
+
+    }
+
+
+/* /block-6 */
+
 /* block-7 */
 
     .block-7{z-index: 2;
